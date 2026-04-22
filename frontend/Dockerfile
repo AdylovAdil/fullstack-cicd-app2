@@ -11,4 +11,8 @@ RUN npm run build
 
 RUN npm install -g serve
 
-CMD ["sh", "-c", "npx serve -s dist -l ${PORT:-3000}"]
+ENV PORT=3000
+
+EXPOSE 3000
+
+CMD ["serve", "-s", "dist", "-l", "3000"]
