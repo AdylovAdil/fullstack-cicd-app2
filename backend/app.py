@@ -1,4 +1,5 @@
 import os
+import psycopg2
 from datetime import datetime
 
 from flask import Flask, jsonify, request
@@ -128,3 +129,7 @@ app = create_app()
 if __name__ == "__main__":
     port = int(os.getenv("PORT", "5000"))
     app.run(host="0.0.0.0", port=port, debug=True)
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+conn = psycopg2.connect(DATABASE_URL)
+cursor = conn.cursor()

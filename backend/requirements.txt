@@ -4,3 +4,4 @@ SQLAlchemy==2.0.32
 psycopg2-binary==2.9.9
 gunicorn==23.0.0
 pytest==8.3.2
+psycopg2-binary
