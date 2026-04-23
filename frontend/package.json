@@ -1,22 +1,18 @@
 {
-  "name": "fullstack-frontend",
-  "private": true,
+  "name": "frontend",
   "version": "1.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "start": "vite preview --host 0.0.0.0 --port $PORT"
-}
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "serve": "^14.2.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.2"
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
   }
-  
 }
