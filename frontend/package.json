@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host 0.0.0.0 --port $PORT"
-  },
+    "start": "serve -s dist -l 3000"   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
